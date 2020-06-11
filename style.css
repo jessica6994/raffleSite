@@ -1,0 +1,207 @@
+@font-face{
+    font-family: Oswald;
+    src: url(fonts/Oswald-Regular.ttf);
+}
+@font-face{
+    font-family: Quicksand;
+    src: url(fonts/Quicksand-Regular.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald;
+}
+p, a, li{
+    font-family: Quicksand;
+}
+.relative{
+    position: relative;
+}
+body{
+    background-color: rgb(19, 19, 41);
+}
+.fa-shopping-cart{
+    font-size: 24px;
+    color: white;
+}
+header img{
+    width: 75%;
+}
+.parallaxHead {
+    background-image: url("images/yellow-audi-sm.jpg");
+    min-height: 70vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display-4, .lead{
+    text-shadow: 2px 2px 4px #000000;
+}
+.jumboButt{
+    color: white;
+    background-color: rgb(19, 19, 41); 
+    border-color: rgb(19, 19, 41);
+    transition:ease-in-out 0.6s;
+}
+.jumboButt:hover{
+    background-color: rgb(136, 111, 1);
+    border-color: rgb(136, 111, 1);
+    transition:ease-in-out 0.6s;
+    color: white;
+}
+.yellowButt{
+    background-color: rgb(136, 111, 1);
+    border-color: rgb(136, 111, 1);
+    transition:ease-in-out 0.6s;
+    color: white;
+}
+.yellowButt:hover{
+    background-color: rgb(19, 19, 41);
+    border-color: rgb(136, 111, 1);
+    transition:ease-in-out 0.6s;
+    color: white;
+}
+h2{
+    text-decoration: underline rgb(184, 151, 4);
+}
+#howToPlay .customCard img{
+    width: 150px;
+}
+.customCard h5{
+    color: rgb(184, 151, 4);
+}
+.reviewBox{
+    min-height: 100px;
+}
+.payments .fab, .social .fab{
+    color: rgb(19, 19, 41);
+    font-size: 24px;
+}
+.footLinks a{
+    color: rgb(19, 19, 41);
+}
+.blueOutButt{
+    border-color: rgb(19, 19, 41);
+    color: rgb(19, 19, 41)
+}
+.blueOutButt:hover{
+    border-color: rgb(19, 19, 41);
+    background-color: rgb(19, 19, 41);
+    color: rgb(184, 151, 4);
+}
+
+/*COMPS PAGE*/
+#countdownComps{
+    background-image: url("images/watchlive-crop.jpg");
+    min-height: 30vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.neon-text {
+    font-family: quicksand;
+    font-size: 20px;
+    color: white;
+    text-shadow:
+    0 0 1vw white, 
+    0 0 3vw #ffed9f,
+    0 0 3vw #ffed9f,
+    0 0 5vw #ebd15e,
+    0 0 5vw #ebd15e;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 2vw #ffed9f, 0 0 5vw #ffed9f, 0 0 10vw #ffed9f, 0 0 10vw #ffed9f, 0 0 .4vw #ffed9f, .5vw .1vw 3vw #ffed9f;
+        color: white;
+    }
+    50% {
+        text-shadow: 0 0 .5vw  #ebd15e, 0 0 1.5vw #ebd15e, 0 0 5vw #ebd15e, 0 0 5vw #ebd15e, 0 0 .2vw #ebd15e, .5vw .1vw 3vw #b6a041;
+        color: #ffed9f;
+    }
+}
+.neon-text {
+    animation: neon 1.5s ease infinite;
+    -moz-animation: neon 1.5s ease infinite;
+    -webkit-animation: neon 1.5s ease infinite;
+}
+.overlay{
+    font-size: 12px;
+    text-shadow: 3px 3px 4px #000000;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#last a{
+    color: white;
+}
+#comps h4{
+    color: rgb(184, 151, 4);
+}
+
+/*COMP DETAILS*/
+.selectedAnswer{
+    background-color: white;
+    color: rgb(19, 19, 41)
+}
+input[type=text]{
+    color: white;
+}
+
+/*CONTACT*/
+.multiForm{
+    width: 100%;
+}
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header img{
+        width: 250px;
+    }
+    .form-row{
+        margin:auto;
+        width: 60%;
+    }
+    .neon-text{
+        font-size: 30px;
+    }
+    #last img{
+        width: 75%;
+    }
+    .overlay h5, .overlay h6{
+        font-size: 30px;
+    }
+    .multiForm{
+        width: 50%;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px){
+    header img{
+        width: 250px;
+    }
+    .parallaxHead{
+        min-height: 500px; 
+        background-attachment: fixed;
+    }
+    .form-row{
+        margin:auto;
+        width: 60%;
+    }
+    /*COMP PAGE*/
+    #countdownComps{
+        min-height: 400px;
+        background-attachment: fixed;
+    }
+    .neon-text{
+        font-size: 30px;
+    }
+    #last img{
+        width: 75%;
+    }
+    .overlay h5, .overlay h6{
+        font-size: 40px;
+    }
+    .multiForm{
+        width: 50%;
+    }
+}
